@@ -55,7 +55,7 @@ public class ProdutoController
     public @ResponseBody String apagar(@PathVariable Integer id)
     {
         produtoRepository.deleteById(id);
-        return "Ok ao apagar!";
+        return "O produto com id: "+id+ " foi apagado";
     }
 
 }
